@@ -5,10 +5,10 @@ import com.cg.entities.Employee;
 public interface EmployeeDao 
 {
 
-	void addEmployee(Employee emp);//creation
-	void updateEmployee(Employee emp);//updation
+	void addEmployee(Employee em);//creation
+	void updateEmployee(Employee em);//updation
 	Employee getEmployeeById(int ID);//Retrieve
-	void removeEmployee(Employee emp);//Delete
+	void removeEmployee(Employee em);//Delete
 	
 	void commitTransaction();//close an entity manager
 	

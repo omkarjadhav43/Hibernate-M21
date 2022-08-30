@@ -7,13 +7,34 @@ import com.cg.service.EmployeeServiceImpl;
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//Lazy initialization
 		EmployeeService service=new EmployeeServiceImpl();
 		Employee emp=new Employee();
-		emp.setID(101);
-		emp.setNAME("omkar");
+		
+		//Create operation
+		emp.setID(103);
+		emp.setNAME("om");
 		service.addEmployee(emp);
-
+		
+		/*//retreive a data
+		emp=service.getEmployeeById(101);
+		System.out.println("Emp ID: "+emp.getID());
+		System.out.println("Emp NAME: "+emp.getNAME());*/
+		
+		/*//update a data
+		emp=service.getEmployeeById(101);
+		emp.setNAME("dhiraj");
+		service.updateEmployee(emp);*/
+		
+		/*//retreive a data
+		emp=service.getEmployeeById(101);
+		System.out.println("Emp ID: "+emp.getID());
+		System.out.println("Emp NAME: "+emp.getNAME());
+	
+		//delete a data
+		emp=service.getEmployeeById(101);
+		service.removeEmployee(emp);*/
+	
+	
 	}
-
 }
